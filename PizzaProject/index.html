@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizza Drill</title>
+		<meta content="initial-scale=1.0" name="viewport" charset="utf-8">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body style="background: url('./img/pizza.jpg') no-repeat center fixed;">
+		<div class="container">
+		<h1>Pupu Pizza!</h1>
+			<form action="" id="allmenu">
+				<div class="menu">
+					<h3>Select Your Size</h3>
+						<input class="size" type="radio" name="Size" value="Personal Pizza">Personal Pizza: $6.00 &nbsp; &nbsp; &nbsp;
+						<input class="size" type="radio" name="Size" value="Medium" checked>Medium: $10.00 &nbsp; &nbsp; &nbsp; &nbsp;
+						<input class="size" type="radio" name="Size" value="Large">Large: $14.00 &nbsp; &nbsp; &nbsp; &nbsp;
+						<input class="size" type="radio" name="Size" value="Extra Large">Extra Large: $16.00 &nbsp; &nbsp; &nbsp; &nbsp;
+					<br>
+					<h3>Select Your Meats</h3>
+					<p class="caption">Your first meat is free! Add $1.00 for each additional selection.</p>
+						<input class="meat" type="checkbox" name="Meat" value="Pepperoni">Pepperoni &nbsp; &nbsp;
+						<input class="meat" type="checkbox" name="Meat" value="Sausage">Sausage &nbsp; &nbsp;
+						<input class="meat" type="checkbox" name="Meat" value="Canadian Bacon">Canadian Bacon &nbsp; &nbsp;
+						<input class="meat" type="checkbox" name="Meat" value="Ground Beef">Ground Beef &nbsp; &nbsp;
+						<input class="meat" type="checkbox" name="Meat" value="Anchovy">Anchovy &nbsp; &nbsp;
+						<input class="meat" type="checkbox" name="Meat" value="Chicken">Chicken &nbsp; &nbsp;
+					<h3>Be Sure to Eat Your Veggies!</h3>
+					<p class="caption">Your first veggie is free! Add $1.00 for each additional selection.</p>
+						<input class="veggie" type="checkbox" name="Veggie" value="Tomatoes">Tomatoes &nbsp;
+						<input class="veggie" type="checkbox" name="Veggie" value="Onions">Onions &nbsp;
+						<input class="veggie" type="checkbox" name="Veggie" value="Olives">Olives &nbsp;
+						<input class="veggie" type="checkbox" name="Veggie" value="Green Peppers">Green Peppers &nbsp;
+						<input class="veggie" type="checkbox" name="Veggie" value="Mushrooms">Shrooms &nbsp;
+						<input class="veggie" type="checkbox" name="Veggie" value="Pineapple" disabled>
+							<div class="tooltip">Pineapple &nbsp;
+								<span class="tooltiptext">Don't even think about it!!!</span> <!-- tooltip text for pineapple-on-pizza people -->
+							</div>
+						<input class="veggie" type="checkbox" name="Veggie" value="Spinach">Spinach &nbsp;
+						<input class="veggie" type="checkbox" name="Veggie" value="Jalapeno">Jalape&ntilde;o &nbsp;
+					<h3>Select Your Cheese</h3>
+						<input class="cheese" type="radio" name="Cheese" value="Cheese" checked>Cheese &nbsp; &nbsp; &nbsp; &nbsp;
+						<input class="cheese" type="radio" name="Cheese" value="No Cheese">No Cheese &nbsp; &nbsp; &nbsp; &nbsp;
+						<input class="cheese" type="radio" name="Cheese" value="Extra Cheese">Extra Cheese! &nbsp; &nbsp; &nbsp; &nbsp;
+						<p class="caption">Add $3.00 for extra cheese on any size pizza. I know, it doesn't make sense that it costs the same on a Personal size as it does on an Extra Large, but it's easier to program.
+					<h3>Select Your Sauce</h3>
+						<input class="sauce" type="radio" name="Sauce" value="Marinara" checked>Hearty Marinara &nbsp; &nbsp; &nbsp; &nbsp;
+						<input class="sauce" type="radio" name="Sauce" value="White Sauce">Garlic White Sauce &nbsp; &nbsp; &nbsp; &nbsp;	
+						<input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce">Zesty BBQ Sauce &nbsp; &nbsp; &nbsp; &nbsp;
+						<input class="sauce" type="radio" name="Sauce" value="No Sauce">No Sauce&nbsp; &nbsp; &nbsp; &nbsp;
+					<h3>Select Your Crust</h3>
+						<input class="crust" type="radio" name="Crust" value="Plain Crust" checked>Plain Crust
+						<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust">Garlic Butter Crust
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust">Cheese-stuffed Crust
+						<input class="crust" type="radio" name="Crust" value="Spicy Crust">Spicy Crust
+						<input class="crust" type="radio" name="Crust" value="House Special Crust">
+							<div class="tooltip">House Special Crust
+								<span class="tooltiptext">Our House Special this week is: <br>No Crust!<br>Enjoy your disc of saucy meat and cheese.</span>
+							</div>
+						<p class="caption">Add $3.00 for Cheese-stuffed Crust.</p>
+				</div>
+			</form>
+			<div id="menu2">
+				<button onclick="getTotal()" id="submit">Calculate Order</button>
+				<button onclick="clearForm()" id="clear">Clear</button><br><br>
+				<div class="title1">You Ordered</div>
+				<div class="title2">Subtotal</div><br>
+				<div class="title1"><div id="receipt1"></div></div>
+				<div class="title2"><div id="receipt2"></div></div><br>
+				<div id="finalTotal"></div>
+			</div>
+			
+		</div>
+		<script src="receipt.js"></script>
+	</body>
+</html>
