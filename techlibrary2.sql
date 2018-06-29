@@ -359,9 +359,15 @@ SELECT b.BranchName, (
 FROM tbl_branch b
 ORDER BY BranchName
 
-
 EXEC question5
 
+ -- and again without the unnecessary inner query:
+SELECT tbl_branch.BranchName, COUNT(*) AS loan_count
+FROM tbl_branch
+INNER JOIN tbl_loans ON tbl_loans.BranchID = tbl_branch.BranchID
+GROUP BY tbl_branch.BranchID, tbl_branch.BranchName
+
+EXEC question5a
 
 /* 6. Retrieve the names, addresses, and number of books checked out 
 	for all borrowers who have more than five books checked out. */
