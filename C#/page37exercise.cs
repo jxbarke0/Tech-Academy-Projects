@@ -26,7 +26,7 @@ namespace Page37Exercise1
 
             Console.ReadLine();
 
-
+            // int favNum = Convert.ToInt32(Console.ReadLine());
 
 
 
