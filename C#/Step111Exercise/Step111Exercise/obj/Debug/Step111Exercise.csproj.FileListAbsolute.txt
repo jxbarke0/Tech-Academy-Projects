@@ -1,0 +1,7 @@
+C:\Users\geoff\source\repos\Step111Exercise\Step111Exercise\obj\Debug\Step111Exercise.csprojAssemblyReference.cache
+C:\Users\geoff\source\repos\Step111Exercise\Step111Exercise\obj\Debug\Step111Exercise.csproj.CoreCompileInputs.cache
+C:\Users\geoff\source\repos\Step111Exercise\Step111Exercise\bin\Debug\Step111Exercise.exe.config
+C:\Users\geoff\source\repos\Step111Exercise\Step111Exercise\bin\Debug\Step111Exercise.exe
+C:\Users\geoff\source\repos\Step111Exercise\Step111Exercise\bin\Debug\Step111Exercise.pdb
+C:\Users\geoff\source\repos\Step111Exercise\Step111Exercise\obj\Debug\Step111Exercise.exe
+C:\Users\geoff\source\repos\Step111Exercise\Step111Exercise\obj\Debug\Step111Exercise.pdb
