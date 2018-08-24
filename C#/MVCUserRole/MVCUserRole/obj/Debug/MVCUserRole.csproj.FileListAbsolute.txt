@@ -1,0 +1,2 @@
+c:\users\geoff\source\repos\MVCUserRole\MVCUserRole\obj\Debug\MVCUserRole.csprojAssemblyReference.cache
+c:\users\geoff\source\repos\MVCUserRole\MVCUserRole\obj\Debug\MVCUserRole.csproj.CoreCompileInputs.cache
